@@ -38,15 +38,15 @@
      *  only be called once.)
      */
     function draw() {
-    
-    graphics.clearRect(0,0,600,600);
+    	//rysowanie księżyca
+   	graphics.clearRect(0,0,600,600);
 	graphics.scale(3,3);
 	graphics.moveTo(52,90);
 	graphics.beginPath() 
 	graphics.fillStyle = "yellow"; 
-	graphics.arc(100, 75, 50, Math.PI/0.70,  Math.PI/1.1);
+	graphics.arc(100, 75, 50, Math.PI/0.70,  Math.PI/1.1); 
 
-	graphics.bezierCurveTo(130,130,140,44,89,26);
+	graphics.bezierCurveTo(130,130,140,44,89,26); //krzywa beziera
 	graphics.stroke();
 	
 	graphics.fill();
